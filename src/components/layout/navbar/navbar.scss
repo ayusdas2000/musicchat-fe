@@ -1,0 +1,18 @@
+.nav-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #ffcf09;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  box-shadow: 0rem 0.1rem 0.1rem;
+  opacity: 75%;
+  align-items: center;
+  .button-container {
+    display: flex;
+    justify-content: stretch;
+    margin-right: 3rem;
+  }
+}
