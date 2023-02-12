@@ -1,12 +1,16 @@
-import axios from 'axios';
-import store from '../redux/store';
-import { LOGOUT } from '../redux/actions/types';
+import axios from "axios";
+import store from "../redux/store";
+import { LOGOUT } from "../redux/actions/types";
 
 const api = axios.create({
-  baseURL: 'https://api-musicchat.herokuapp.com/api',
+  baseURL: "https://musicchat-be.onrender.com/api",
   headers: {
-    'Content-Type': 'application/json'
-  }
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers":
+      "Access-Control-Allow-Headers, Content-Type, Authorization",
+    "Access-Control-Allow-Methods": "*",
+    "Content-Type": "application/json",
+  },
 });
 
 /**
